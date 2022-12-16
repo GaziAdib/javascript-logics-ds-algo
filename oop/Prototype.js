@@ -16,8 +16,23 @@ User.prototype.logout = function () {
     console.log(`${this.email} has Logged Out!`);
 }
 
-let user1 = new User('adib@gmail.com', 'adib');
+// protototype Inheritance
+function Admin(...args) {
+    User.apply(this, args);
+    console.log('args', args);
+}
 
-user1.login();
-user1.logout();
+// created an object similar to User Prototype
+Admin.prototype = Object.create(User.prototype);
+
+let user1 = new User('adib@gmail.com', 'adib');
+let admin = new Admin('admin@gmail.com', 'admin');
+
+admin.login();
+admin.logout();
+
+// console.log('admin', admin.login());
+
+// user1.login();
+// user1.logout();
 

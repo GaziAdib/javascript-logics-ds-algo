@@ -1,7 +1,7 @@
 console.log('Queue DS Practice');
 
 // isEmpty(): To check if the queue is empty
-// isFull(): To check whether the queue is full or not
+// isFull():  To check whether the queue is full or not
 // dequeue(): Removes the element from the frontal side of the queue
 // enqueue(): It inserts elements to the end of the queue
 // Front: Pointer element responsible for fetching the first element from the queue

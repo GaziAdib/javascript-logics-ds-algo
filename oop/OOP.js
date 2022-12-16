@@ -78,6 +78,8 @@ let users = [user1, user2, admin]
 
 admin.deleteUser(user1);
 
+// normal user cannot delete this what admin can do user cannot do
+
 admin.login();
 
 console.log(users);

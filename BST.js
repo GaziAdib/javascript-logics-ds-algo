@@ -88,8 +88,8 @@ class BinarySearchTree {
 
     postOrder(root) {
         if (root) {
-            this.inOrder(root.left)
-            this.inOrder(root.right);
+            this.postOrder(root.left)
+            this.postOrder(root.right);
             console.log(root.value);
         }
     }

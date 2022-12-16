@@ -39,7 +39,8 @@ class Stack {
             this.top--;
             return lastIndex
         } else {
-            console.log('No Items in Stack!')
+            console.log('No Items in Stack!');
+            return stack[this.top--];
         }
 
     }
